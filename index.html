@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TODO List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Container for the todo list -->
+    <div id="container">
+        <!-- Todo list header -->
+        <div id="header">
+            <h1>
+        </div>
+
+        <!-- Input box -->
+        <div>
+            <input type="text" class="inputField" name="inputField" id="inputField" placeholder="Add New Task">
+
+            <!-- Add button -->
+            <button id="add-btn" onclick="addTask()">Add</button>
+        </div>
+
+        <!-- Tasks list -->
+        <h2>Tasks List</h2>
+
+        <hr>
+
+        <div class="filters">
+            <span class="active" id="all">All <span id="number">0</span></span>
+            <span id="pending">Pending <span id="number">0</span></span>
+            <span id="completed">Completed <span id="number">0</span></span>
+        </div>
+
+        <button class="clear-btn">Clear All</button>
+
+        <hr>
+
+        <ul id="tasksList"></ul>
+    </div>
+
+    <footer>
+        <p>
+            Copyright &copy; | Hassane Moustapha Ousmane
+        </p>
+    </footer>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
