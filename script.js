@@ -23,4 +23,11 @@ function addTask() {
 
     // Clear the input field by setting its value to an empty string
     inputField.value = "";
+
+    const checkbox = li.querySelector("input");
+
+    // when the checkbox is click, mark the task as completed
+    checkbox.addEventListener("click", function () {
+        li.classList.toggle("completed", checkbox.checked);
+    });
 }
