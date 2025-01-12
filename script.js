@@ -25,9 +25,21 @@ function addTask() {
     inputField.value = "";
 
     const checkbox = li.querySelector("input");
+    const editBtn = li.querySelector(".edit-btn");
 
-    // when the checkbox is click, mark the task as completed
+    // When the checkbox is click, mark the task as completed
     checkbox.addEventListener("click", function () {
         li.classList.toggle("completed", checkbox.checked);
     });
+
+    // Edit task when edit button is clicked
+    editBtn.addEventListener("click", () => {
+        const update = prompt("Edit task:", taskSpan.textContent);
+        if (update !== null) {
+            taskSpan.textContent = update;
+            li.classList.remove("completed")
+
+            checkbox.checked = false;
+        }
+    })
 }
