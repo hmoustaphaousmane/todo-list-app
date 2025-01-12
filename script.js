@@ -25,6 +25,7 @@ function addTask() {
     inputField.value = "";
 
     const checkbox = li.querySelector("input");
+    const taskSpan = li.querySelector("span");
     const editBtn = li.querySelector(".edit-btn");
     const deleteBtn = li.querySelector(".delete-btn");
 
