@@ -26,6 +26,7 @@ function addTask() {
 
     const checkbox = li.querySelector("input");
     const editBtn = li.querySelector(".edit-btn");
+    const deleteBtn = li.querySelector(".delete-btn");
 
     // When the checkbox is click, mark the task as completed
     checkbox.addEventListener("click", function () {
@@ -40,6 +41,13 @@ function addTask() {
             li.classList.remove("completed")
 
             checkbox.checked = false;
+        }
+    })
+
+    // Remove with confirmation a task when its delete button is clicked
+    deleteBtn.addEventListener("click", () => {
+        if (confirm("Are you sure you want to delete this task?")) {
+            li.remove();
         }
     })
 }
