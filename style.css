@@ -1,3 +1,21 @@
+body {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    color: black;
+    border-radius: 15px;
+    border: 2px solid #0033ff;
+    background:  antiquewhite;
+}
+
 .completed {
     text-decoration: line-through;
     color: gray;
